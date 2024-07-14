@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -37,7 +37,7 @@ public class Main {
         manager.getSubtask(subtask2.getId());
 
         // Вывод истории задач
-        ArrayList<Task> history = manager.getHistory();
+        List<Task> history = manager.getHistory();
         System.out.println("История просмотров:");
         for (Task task : history) {
             System.out.println(task);

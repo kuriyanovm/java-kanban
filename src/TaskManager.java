@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public interface TaskManager {
     void create(Task task);
@@ -37,7 +38,7 @@ public interface TaskManager {
 
     void updateEpicStatus(Epic epic);
 
-    ArrayList<Task> getHistory();
+    List<Task> getHistory();
 
     int generateUniqueId();
 

@@ -2,6 +2,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -92,7 +93,7 @@ class InMemoryTaskManagerTest {
         manager.create(task);
         manager.getTask(task.getId());
 
-        ArrayList<Task> history = manager.getHistory();
+        List<Task> history = manager.getHistory();
         assertNotNull(history, "История не должна быть null");
         assertEquals(1, history.size(), "История должна содержать одну задачу");
 
