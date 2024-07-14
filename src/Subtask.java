@@ -4,6 +4,7 @@ public class Subtask extends Task {
 
     public Subtask(String name, String description, int epicId) {
         super(name, description);
+
         this.epicId = epicId;
     }
 
@@ -17,4 +18,5 @@ public class Subtask extends Task {
                 "epicId=" + epicId +
                 "} " + super.toString();
     }
+
 }
